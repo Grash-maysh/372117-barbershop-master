@@ -1,7 +1,7 @@
 # Учебный проект «Барбершоп»
 
-* Студент: [FlowLynx](https://up.htmlacademy.ru/htmlcss/22/user/372117).
-
+* Студент:(https://htmlacademy.ru/profile/id852933).
+* Наставник: Илья Брайтсайд.(https://htmlacademy.ru/profile/id372117)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
