@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
@@ -15,10 +16,10 @@
    			<li><a href="#">КОНТАКТЫ</a></li>
    	</nav>
    	<ul class="user-nav">
-   		<li class="login"><a href="#">ВХОД</a></li>
-   	</ul>
+      <li class="login"><a class="login" href="login.html">ВХОД</a></li>
+    </ul>
    	<a class="main-header-logo" href="index.html">
-   		<img class="main-header-logo" widht="111" height="24" alt="Логотип Барбершоп Бородинский" src="http://placehold.it/111x24"></a>
+   		<img class="main-header-logo" widht="111" height="24" alt="Логотип Барбершоп Бородинский" src="img/logo-small.svg"></a>
    	</header>
 
 
@@ -38,8 +39,8 @@
           <a href="catalog.html">СРЕДСТВА ДЛЯ УХОДА</a>
         </li>
         <li>
-         <a class="breadcrumbs-current">Набор для путешествий «Baxter of California»</a> 
-        </li> 
+         <a class="breadcrumbs-current">Набор для путешествий «Baxter of California»</a>
+        </li>
       </ul>
     </nav>
 
@@ -49,19 +50,19 @@
      <ul class="img-items">
        <li>
         <a href="#">
-          <img src="http://placehold.it/484x522" widht="484" height="522" alt="Фото всего коплекта"></a>
+          <img src="img/item-img-main.jpg" widht="460" height="496" alt="Фото всего коплекта"></a>
        </li>
        <li>
         <a href="#">
-          <img src="http://placehold.it/164x173" widht="164" height="173" alt="Фото в профиль"></a>
+          <img src="img/item-img-preview1.jpg" widht="140" height="149" alt="Фото в профиль"></a>
        </li>
        <li>
         <a href="#">
-          <img src="http://placehold.it/164x173" widht="164" height="173" alt="Фото в профиль 2"></a>
+          <img src="img/item-img-preview2.jpg" widht="140" height="149" alt="Фото в профиль 2"></a>
        </li>
        <li>
         <a href="#">
-          <img src="http://placehold.it/164x173" widht="164" height="173" alt="Фото в профиль 3"></a>
+          <img src="img/item-img-preview3.jpg" widht="140" height="149" alt="Фото в профиль 3"></a>
        </li>
      </ul>
 
@@ -91,9 +92,9 @@
     <footer class="footer-contacts">
     <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-       КАК НАС НАЙТИ?<br>
+       <a class="map" href="map.html">КАК НАС НАЙТИ?</a><br>
        ТЕЛЕФОН: +7 (495) 666-02-66
-    </p>   
+    </p>
     <div class="social">
       <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
       <ul>
@@ -106,12 +107,35 @@
       <span>РАЗРАБОТАНО:</span>
       <a class="btn" href="#">html academy</a>
     </div>
-  </footer> 
-  <section class="modal modal-login">
-          <h2>Личный кабинет</h2>
-          <p>Введите свой логин и пароль.</p>
-          <!-- Здесь будет форма -->
-          <span class="modal-close">x</span>
-     </section>
+  </footer>
+
+
+<section class="modal modal-login">
+	<h2>Личный кабинет</h2>
+	<p>Введите свой логин и пароль.</p>
+	<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+	  <span class="visually-hidden">Логин</span>
+		<input class="login-form-user-icon" type="text" name="login" placeholder="Логин">
+
+		<span class="visually-hedden">Пароль</span>
+		<input class="login-form-password-icon" type="password" name="password" placeholder="Пароль">
+
+		<label class="login-form-checkbox">
+		<input class="visually-hidden" type="checkbox" name="remember">
+		<span class="checkbox-indicator"></span>
+		<span>Запомните меня</span>
+	  </label>
+		<a class="restor" href="#">Я забыл пароль!</a>
+	 <button class="modal-form-button" type="submit">Войти</button>
+	</form>
+	 <button class="modal-close" type="button">Закрыть</span>
+</section>
+
+<section class="modal modal-map">
+	<h2 class="visually-hidden">Как до нас добраться</h2>
+	<img src="img/map-modal.jpg" width="767" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+	<button class="modal-close" type="button">Закрыть</span>
+</section>
+
   </body>
-</html>                 
+</html>
